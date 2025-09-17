@@ -1,1 +1,20 @@
 Starting engine with content at C:\Users\Hasan\Indie Game\Indie-Game-Project\Indie Game.
+No message box user interface defined.
+Object reference not set to an instance of an object.
+   at MAR.Game.Shared.Models.UserInterfaces.MessageBoxInstance.ShiftControlByOffset()
+   at MAR.Game.Shared.Models.UserInterfaces.MessageBoxInstance.set_Command(MessageCommand value)
+   at MAR.Game.Shared.Models.UserInterfaces.MessageBoxInstance.Load(MessageCommand command, MessageCommand priorMessageCommand, MessageCommand nextMessageCommand, String header, String body, CharacterModel portraitModel, UserInterface userInterface)
+   at MAR.Game.RPGCore.Models.Scripts.Commands.Message.StaticMessageCommand.LoadMessage(Object parameter, IMessageBoxInstance messageBoxInstance)
+   at MAR.Game.Shared.Models.Scripts.Commands.Message.MessageCommand.Execute(Object parameter)
+   at MAR.Game.RPGCore.Models.Scripts.Commands.Message.StaticMessageCommand.Execute(Object parameter)
+   at MAR.Game.RPGCore.Models.Scripts.EntityActorScriptHandler.Execute()
+   at MAR.Game.RPGCore.Models.Scenes.SceneMap.HandleScripts(TimeSpan interval, TimeSpan total)
+   at MAR.Game.RPGCore.Models.Scenes.SceneMap.Update(TimeSpan interval, TimeSpan total)
+   at MAR.Game.Shared.Engines.BaseSceneEngine.Update(TimeSpan interval, TimeSpan total)
+   at MAR.Game.RPGCore.RPGCore.Update(TimeSpan interval, TimeSpan total)
+   at MAR.Game.Engines.Desktop.Game.Update(GameTime gameTime)
+   at Microsoft.Xna.Framework.Game.Tick()
+   at Microsoft.Xna.Framework.Game.RunLoop()
+   at Microsoft.Xna.Framework.Game.Run()
+   at MAR.Game.Engines.Desktop.Program.Main(String[] args)
+Fatal error; Exiting game.
